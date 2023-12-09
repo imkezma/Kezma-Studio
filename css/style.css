@@ -83,7 +83,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-    font-size: calc(1.325rem + 0.9vw);
+    font-size: calc(1.325rem + 1.5vw);
 }
 
 img {
@@ -246,6 +246,25 @@ section p {
 }
 
 @media only screen and (max-width: 991px) {
+    body {
+        font-size: 3rem;
+    }
+    h1, .h1 {
+        font-size: calc(1.325rem + 4vw);
+    }
+    .h2, h2 {
+        font-size: calc(1.325rem + 2.5vw);
+    }
+    header {
+        font-size: 2.5rem;
+    }
+    header nav.navbar {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .navbar-brand, .navbar-toggler {
+        font-size: 3rem;
+    }
     .navbar-expand-lg .navbar-nav .nav-link {
         /*list-style: none;*/
         /*display: block;*/
@@ -269,15 +288,36 @@ section p {
     section .home-info {
         margin: 0 40px;
     }
+    .home-desc h1 {
+        font-weight: 300;
+    }
 
+    section p {
+        font-size: 2.4rem;
+    }
+    .project-tags {
+        font-size: 2rem;
+    }
+    .project-tags li {
+        padding: 0 1rem;
+    }
     .home-desc-action {
         margin-top: 50px;
         text-align: center;
     }
+
     .home-desc-action a {
         margin: 0 10px;
     }
 
+    .home-desc-action a:first-child {
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        font-size: 1.8rem;
+        padding: 12px 76px;
+    }
     .project:not(:first-child) {
         margin-top: 20px;
     }
@@ -288,5 +328,16 @@ section p {
 
     footer {
         text-align: center;
+    }
+
+    .socials a {
+        font-size: 2.5rem;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+    }
+
+    .socials .freelancer-logo {
+        width: 3rem;
     }
 }
