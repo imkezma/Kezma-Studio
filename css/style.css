@@ -232,6 +232,10 @@ section p {
     vertical-align: top;
 }
 
+#typed h1, #typed h2{
+	display: inline;
+}
+
 @media (min-width: 1200px) {
     h1, .h1 {
         font-size: 2rem;
